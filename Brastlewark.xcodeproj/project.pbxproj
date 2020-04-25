@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5296046E2453E764003EE63A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296046D2453E764003EE63A /* AppDelegate.swift */; };
+		529604702453E764003EE63A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296046F2453E764003EE63A /* SceneDelegate.swift */; };
+		529604772453E766003EE63A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529604762453E766003EE63A /* Assets.xcassets */; };
+		5296047A2453E766003EE63A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529604782453E766003EE63A /* LaunchScreen.storyboard */; };
+		529604852453E766003EE63A /* BrastlewarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529604842453E766003EE63A /* BrastlewarkTests.swift */; };
+		529604902453E766003EE63A /* BrastlewarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296048F2453E766003EE63A /* BrastlewarkUITests.swift */; };
+		529604A02453E979003EE63A /* MainResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296049E2453E979003EE63A /* MainResultsViewController.swift */; };
+		529604A12453E979003EE63A /* MainResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5296049F2453E979003EE63A /* MainResultsViewController.xib */; };
+		529604A62453EB26003EE63A /* HabitantsModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529604A52453EB26003EE63A /* HabitantsModelResponse.swift */; };
+		529604AB2453F698003EE63A /* HabitantsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529604AA2453F698003EE63A /* HabitantsService.swift */; };
+		529604AD2453F78D003EE63A /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529604AC2453F78D003EE63A /* BaseService.swift */; };
+		529604AF2453F84E003EE63A /* HabitantsServiceConcrete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529604AE2453F84E003EE63A /* HabitantsServiceConcrete.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		529604812453E766003EE63A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 529604622453E764003EE63A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 529604692453E764003EE63A;
+			remoteInfo = Brastlewark;
+		};
+		5296048C2453E766003EE63A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 529604622453E764003EE63A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 529604692453E764003EE63A;
+			remoteInfo = Brastlewark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5296046A2453E764003EE63A /* Brastlewark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brastlewark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5296046D2453E764003EE63A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5296046F2453E764003EE63A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		529604762453E766003EE63A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		529604792453E766003EE63A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5296047B2453E766003EE63A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529604802453E766003EE63A /* BrastlewarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrastlewarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		529604842453E766003EE63A /* BrastlewarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrastlewarkTests.swift; sourceTree = "<group>"; };
+		529604862453E766003EE63A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5296048B2453E766003EE63A /* BrastlewarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrastlewarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5296048F2453E766003EE63A /* BrastlewarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrastlewarkUITests.swift; sourceTree = "<group>"; };
+		529604912453E766003EE63A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5296049E2453E979003EE63A /* MainResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainResultsViewController.swift; sourceTree = "<group>"; };
+		5296049F2453E979003EE63A /* MainResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainResultsViewController.xib; sourceTree = "<group>"; };
+		529604A52453EB26003EE63A /* HabitantsModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitantsModelResponse.swift; sourceTree = "<group>"; };
+		529604AA2453F698003EE63A /* HabitantsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitantsService.swift; sourceTree = "<group>"; };
+		529604AC2453F78D003EE63A /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		529604AE2453F84E003EE63A /* HabitantsServiceConcrete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitantsServiceConcrete.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		529604672453E764003EE63A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5296047D2453E766003EE63A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529604882453E766003EE63A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		529604612453E764003EE63A = {
+			isa = PBXGroup;
+			children = (
+				5296046C2453E764003EE63A /* Brastlewark */,
+				529604832453E766003EE63A /* BrastlewarkTests */,
+				5296048E2453E766003EE63A /* BrastlewarkUITests */,
+				5296046B2453E764003EE63A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5296046B2453E764003EE63A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5296046A2453E764003EE63A /* Brastlewark.app */,
+				529604802453E766003EE63A /* BrastlewarkTests.xctest */,
+				5296048B2453E766003EE63A /* BrastlewarkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5296046C2453E764003EE63A /* Brastlewark */ = {
+			isa = PBXGroup;
+			children = (
+				529604A72453F5F8003EE63A /* Core */,
+				5296049D2453E957003EE63A /* Controllers */,
+				529604A22453EA39003EE63A /* Models */,
+				5296046D2453E764003EE63A /* AppDelegate.swift */,
+				5296046F2453E764003EE63A /* SceneDelegate.swift */,
+				529604762453E766003EE63A /* Assets.xcassets */,
+				529604782453E766003EE63A /* LaunchScreen.storyboard */,
+				5296047B2453E766003EE63A /* Info.plist */,
+			);
+			path = Brastlewark;
+			sourceTree = "<group>";
+		};
+		529604832453E766003EE63A /* BrastlewarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				529604842453E766003EE63A /* BrastlewarkTests.swift */,
+				529604862453E766003EE63A /* Info.plist */,
+			);
+			path = BrastlewarkTests;
+			sourceTree = "<group>";
+		};
+		5296048E2453E766003EE63A /* BrastlewarkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5296048F2453E766003EE63A /* BrastlewarkUITests.swift */,
+				529604912453E766003EE63A /* Info.plist */,
+			);
+			path = BrastlewarkUITests;
+			sourceTree = "<group>";
+		};
+		5296049D2453E957003EE63A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5296049E2453E979003EE63A /* MainResultsViewController.swift */,
+				5296049F2453E979003EE63A /* MainResultsViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		529604A22453EA39003EE63A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				529604A52453EB26003EE63A /* HabitantsModelResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		529604A72453F5F8003EE63A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				529604A82453F62F003EE63A /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		529604A82453F62F003EE63A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				529604A92453F644003EE63A /* Protocols */,
+				529604AC2453F78D003EE63A /* BaseService.swift */,
+				529604AE2453F84E003EE63A /* HabitantsServiceConcrete.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		529604A92453F644003EE63A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				529604AA2453F698003EE63A /* HabitantsService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		529604692453E764003EE63A /* Brastlewark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 529604942453E766003EE63A /* Build configuration list for PBXNativeTarget "Brastlewark" */;
+			buildPhases = (
+				529604662453E764003EE63A /* Sources */,
+				529604672453E764003EE63A /* Frameworks */,
+				529604682453E764003EE63A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Brastlewark;
+			productName = Brastlewark;
+			productReference = 5296046A2453E764003EE63A /* Brastlewark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5296047F2453E766003EE63A /* BrastlewarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 529604972453E766003EE63A /* Build configuration list for PBXNativeTarget "BrastlewarkTests" */;
+			buildPhases = (
+				5296047C2453E766003EE63A /* Sources */,
+				5296047D2453E766003EE63A /* Frameworks */,
+				5296047E2453E766003EE63A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				529604822453E766003EE63A /* PBXTargetDependency */,
+			);
+			name = BrastlewarkTests;
+			productName = BrastlewarkTests;
+			productReference = 529604802453E766003EE63A /* BrastlewarkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5296048A2453E766003EE63A /* BrastlewarkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5296049A2453E766003EE63A /* Build configuration list for PBXNativeTarget "BrastlewarkUITests" */;
+			buildPhases = (
+				529604872453E766003EE63A /* Sources */,
+				529604882453E766003EE63A /* Frameworks */,
+				529604892453E766003EE63A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5296048D2453E766003EE63A /* PBXTargetDependency */,
+			);
+			name = BrastlewarkUITests;
+			productName = BrastlewarkUITests;
+			productReference = 5296048B2453E766003EE63A /* BrastlewarkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		529604622453E764003EE63A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = droidfx;
+				TargetAttributes = {
+					529604692453E764003EE63A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					5296047F2453E766003EE63A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 529604692453E764003EE63A;
+					};
+					5296048A2453E766003EE63A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 529604692453E764003EE63A;
+					};
+				};
+			};
+			buildConfigurationList = 529604652453E764003EE63A /* Build configuration list for PBXProject "Brastlewark" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 529604612453E764003EE63A;
+			productRefGroup = 5296046B2453E764003EE63A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				529604692453E764003EE63A /* Brastlewark */,
+				5296047F2453E766003EE63A /* BrastlewarkTests */,
+				5296048A2453E766003EE63A /* BrastlewarkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		529604682453E764003EE63A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529604A12453E979003EE63A /* MainResultsViewController.xib in Resources */,
+				5296047A2453E766003EE63A /* LaunchScreen.storyboard in Resources */,
+				529604772453E766003EE63A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5296047E2453E766003EE63A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529604892453E766003EE63A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		529604662453E764003EE63A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529604A02453E979003EE63A /* MainResultsViewController.swift in Sources */,
+				529604A62453EB26003EE63A /* HabitantsModelResponse.swift in Sources */,
+				529604AD2453F78D003EE63A /* BaseService.swift in Sources */,
+				529604AB2453F698003EE63A /* HabitantsService.swift in Sources */,
+				5296046E2453E764003EE63A /* AppDelegate.swift in Sources */,
+				529604702453E764003EE63A /* SceneDelegate.swift in Sources */,
+				529604AF2453F84E003EE63A /* HabitantsServiceConcrete.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5296047C2453E766003EE63A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529604852453E766003EE63A /* BrastlewarkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529604872453E766003EE63A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529604902453E766003EE63A /* BrastlewarkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		529604822453E766003EE63A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 529604692453E764003EE63A /* Brastlewark */;
+			targetProxy = 529604812453E766003EE63A /* PBXContainerItemProxy */;
+		};
+		5296048D2453E766003EE63A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 529604692453E764003EE63A /* Brastlewark */;
+			targetProxy = 5296048C2453E766003EE63A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		529604782453E766003EE63A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				529604792453E766003EE63A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		529604922453E766003EE63A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		529604932453E766003EE63A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		529604952453E766003EE63A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2692MDUFS2;
+				INFOPLIST_FILE = Brastlewark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fx.Brastlewark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		529604962453E766003EE63A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2692MDUFS2;
+				INFOPLIST_FILE = Brastlewark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fx.Brastlewark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		529604982453E766003EE63A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2692MDUFS2;
+				INFOPLIST_FILE = BrastlewarkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fx.BrastlewarkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brastlewark.app/Brastlewark";
+			};
+			name = Debug;
+		};
+		529604992453E766003EE63A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2692MDUFS2;
+				INFOPLIST_FILE = BrastlewarkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fx.BrastlewarkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brastlewark.app/Brastlewark";
+			};
+			name = Release;
+		};
+		5296049B2453E766003EE63A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2692MDUFS2;
+				INFOPLIST_FILE = BrastlewarkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fx.BrastlewarkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Brastlewark;
+			};
+			name = Debug;
+		};
+		5296049C2453E766003EE63A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2692MDUFS2;
+				INFOPLIST_FILE = BrastlewarkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fx.BrastlewarkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Brastlewark;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		529604652453E764003EE63A /* Build configuration list for PBXProject "Brastlewark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529604922453E766003EE63A /* Debug */,
+				529604932453E766003EE63A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		529604942453E766003EE63A /* Build configuration list for PBXNativeTarget "Brastlewark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529604952453E766003EE63A /* Debug */,
+				529604962453E766003EE63A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		529604972453E766003EE63A /* Build configuration list for PBXNativeTarget "BrastlewarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529604982453E766003EE63A /* Debug */,
+				529604992453E766003EE63A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5296049A2453E766003EE63A /* Build configuration list for PBXNativeTarget "BrastlewarkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5296049B2453E766003EE63A /* Debug */,
+				5296049C2453E766003EE63A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 529604622453E764003EE63A /* Project object */;
+}
