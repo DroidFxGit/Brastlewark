@@ -13,17 +13,17 @@ final class MainResultsViewController: UIViewController {
     
     var searchController: UISearchController!
     var viewModel: MainResultsViewModel!
-    var datasource: MainResultsDataSource! {
-        didSet {
-            guard isViewLoaded else { return }
-            collectionView.reloadData()
-        }
-    }
+    var datasource: MainResultsDataSource!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Inhabitants"
         setupCollectionView()
+        datasource.observe(self) { [weak self] in
+            DispatchQueue.main.async {
+                self?.collectionView.reloadData()
+            }
+        }
         viewModel.fetchHabitants()
     }
     

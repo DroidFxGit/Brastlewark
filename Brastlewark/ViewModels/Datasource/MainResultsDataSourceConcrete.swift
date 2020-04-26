@@ -8,11 +8,16 @@
 
 import UIKit
 
+
 final class MainResultsDataSourceConcrete: GenericDatasource<GnomeModel>, MainResultsDataSource {
     private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 20.0, right: 20.0)
     private let itemsPerRow: CGFloat = 2
     private let kHeightRow: CGFloat = 165
     private let kHeightFooter: CGFloat = 145
+    
+    func observe(_ observer: NSObject, completionHandler: @escaping CompletionHandler) {
+        data.addObserver(observer, completionHandler: completionHandler)
+    }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1

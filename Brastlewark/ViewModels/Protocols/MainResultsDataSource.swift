@@ -9,4 +9,5 @@
 import UIKit
 
 protocol MainResultsDataSource: UICollectionViewDelegate, UICollectionViewDataSource {
+    func observe(_ observer: NSObject, completionHandler: @escaping CompletionHandler)
 }

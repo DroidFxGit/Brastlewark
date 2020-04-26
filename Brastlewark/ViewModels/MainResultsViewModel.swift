@@ -19,8 +19,8 @@ struct MainResultsViewModel {
     }
     
     func fetchHabitants() {
-        service.fetchHabitants { response in
-            DispatchQueue.main.async {
+        DispatchQueue.main.async {
+            self.service.fetchHabitants { response in
                 switch response {
                 case .success(let response):
                     self.datasource?.data.value = response.habitants
