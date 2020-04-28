@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01542892AB524F980B6E7386 /* Pods_Brastlewark_BrastlewarkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82CB84942C56E4061DBC6550 /* Pods_Brastlewark_BrastlewarkUITests.framework */; };
 		526DF794245491BD000CE62E /* Startable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DF793245491BD000CE62E /* Startable.swift */; };
 		526DF79824549262000CE62E /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DF79724549262000CE62E /* MainCoordinator.swift */; };
 		526DF79B2454B050000CE62E /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DF79A2454B050000CE62E /* ViewControllerFactory.swift */; };
@@ -39,6 +40,8 @@
 		529604AB2453F698003EE63A /* HabitantsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529604AA2453F698003EE63A /* HabitantsService.swift */; };
 		529604AD2453F78D003EE63A /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529604AC2453F78D003EE63A /* BaseService.swift */; };
 		529604AF2453F84E003EE63A /* HabitantsServiceConcrete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529604AE2453F84E003EE63A /* HabitantsServiceConcrete.swift */; };
+		793F10969AE5B3E8D0903733 /* Pods_Brastlewark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B27C6768DEE0BA30609E1C /* Pods_Brastlewark.framework */; };
+		EB467032A8D736B29F78617D /* Pods_BrastlewarkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA70C6DD9051C591454F87E6 /* Pods_BrastlewarkTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4536D8118EEE8BF31A5E33F2 /* Pods-BrastlewarkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrastlewarkTests.debug.xcconfig"; path = "Target Support Files/Pods-BrastlewarkTests/Pods-BrastlewarkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4695785FAE562ACBB783009A /* Pods-Brastlewark-BrastlewarkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark-BrastlewarkUITests.debug.xcconfig"; path = "Target Support Files/Pods-Brastlewark-BrastlewarkUITests/Pods-Brastlewark-BrastlewarkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		526DF793245491BD000CE62E /* Startable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Startable.swift; sourceTree = "<group>"; };
 		526DF79724549262000CE62E /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		526DF79A2454B050000CE62E /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
@@ -97,6 +102,13 @@
 		529604AA2453F698003EE63A /* HabitantsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitantsService.swift; sourceTree = "<group>"; };
 		529604AC2453F78D003EE63A /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		529604AE2453F84E003EE63A /* HabitantsServiceConcrete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitantsServiceConcrete.swift; sourceTree = "<group>"; };
+		5DC7AA6321BAAA1191E39689 /* Pods-Brastlewark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark.debug.xcconfig"; path = "Target Support Files/Pods-Brastlewark/Pods-Brastlewark.debug.xcconfig"; sourceTree = "<group>"; };
+		7C1798984FB372E8C85560E7 /* Pods-Brastlewark-BrastlewarkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark-BrastlewarkUITests.release.xcconfig"; path = "Target Support Files/Pods-Brastlewark-BrastlewarkUITests/Pods-Brastlewark-BrastlewarkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		82CB84942C56E4061DBC6550 /* Pods_Brastlewark_BrastlewarkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brastlewark_BrastlewarkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B27C6768DEE0BA30609E1C /* Pods_Brastlewark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brastlewark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF526ED78113F5A72636060E /* Pods-Brastlewark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brastlewark.release.xcconfig"; path = "Target Support Files/Pods-Brastlewark/Pods-Brastlewark.release.xcconfig"; sourceTree = "<group>"; };
+		DA70C6DD9051C591454F87E6 /* Pods_BrastlewarkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrastlewarkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBF037591CD2B9071B070243 /* Pods-BrastlewarkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrastlewarkTests.release.xcconfig"; path = "Target Support Files/Pods-BrastlewarkTests/Pods-BrastlewarkTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				793F10969AE5B3E8D0903733 /* Pods_Brastlewark.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB467032A8D736B29F78617D /* Pods_BrastlewarkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,12 +132,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01542892AB524F980B6E7386 /* Pods_Brastlewark_BrastlewarkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47FECDBFCFD1A70DBDF45DF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5B27C6768DEE0BA30609E1C /* Pods_Brastlewark.framework */,
+				82CB84942C56E4061DBC6550 /* Pods_Brastlewark_BrastlewarkUITests.framework */,
+				DA70C6DD9051C591454F87E6 /* Pods_BrastlewarkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		526DF79024548EFC000CE62E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +272,8 @@
 				529604832453E766003EE63A /* BrastlewarkTests */,
 				5296048E2453E766003EE63A /* BrastlewarkUITests */,
 				5296046B2453E764003EE63A /* Products */,
+				C56D7A14BC78C3B6AF400B20 /* Pods */,
+				47FECDBFCFD1A70DBDF45DF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -344,6 +371,20 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		C56D7A14BC78C3B6AF400B20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DC7AA6321BAAA1191E39689 /* Pods-Brastlewark.debug.xcconfig */,
+				CF526ED78113F5A72636060E /* Pods-Brastlewark.release.xcconfig */,
+				4695785FAE562ACBB783009A /* Pods-Brastlewark-BrastlewarkUITests.debug.xcconfig */,
+				7C1798984FB372E8C85560E7 /* Pods-Brastlewark-BrastlewarkUITests.release.xcconfig */,
+				4536D8118EEE8BF31A5E33F2 /* Pods-BrastlewarkTests.debug.xcconfig */,
+				DBF037591CD2B9071B070243 /* Pods-BrastlewarkTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -351,9 +392,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 529604942453E766003EE63A /* Build configuration list for PBXNativeTarget "Brastlewark" */;
 			buildPhases = (
+				33965E27B6DED739608111A6 /* [CP] Check Pods Manifest.lock */,
 				529604662453E764003EE63A /* Sources */,
 				529604672453E764003EE63A /* Frameworks */,
 				529604682453E764003EE63A /* Resources */,
+				F788EE750C9177909287E310 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -368,6 +411,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 529604972453E766003EE63A /* Build configuration list for PBXNativeTarget "BrastlewarkTests" */;
 			buildPhases = (
+				D7DBE8D9D4BE1FE6A7BB6531 /* [CP] Check Pods Manifest.lock */,
 				5296047C2453E766003EE63A /* Sources */,
 				5296047D2453E766003EE63A /* Frameworks */,
 				5296047E2453E766003EE63A /* Resources */,
@@ -386,9 +430,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5296049A2453E766003EE63A /* Build configuration list for PBXNativeTarget "BrastlewarkUITests" */;
 			buildPhases = (
+				4CF1C6FACCAD05CB890DF446 /* [CP] Check Pods Manifest.lock */,
 				529604872453E766003EE63A /* Sources */,
 				529604882453E766003EE63A /* Frameworks */,
 				529604892453E766003EE63A /* Resources */,
+				C59E798B7F219B58DC1A9E11 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -472,6 +518,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33965E27B6DED739608111A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Brastlewark-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CF1C6FACCAD05CB890DF446 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Brastlewark-BrastlewarkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C59E798B7F219B58DC1A9E11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brastlewark-BrastlewarkUITests/Pods-Brastlewark-BrastlewarkUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brastlewark-BrastlewarkUITests/Pods-Brastlewark-BrastlewarkUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brastlewark-BrastlewarkUITests/Pods-Brastlewark-BrastlewarkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7DBE8D9D4BE1FE6A7BB6531 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrastlewarkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F788EE750C9177909287E310 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brastlewark/Pods-Brastlewark-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brastlewark/Pods-Brastlewark-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brastlewark/Pods-Brastlewark-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		529604662453E764003EE63A /* Sources */ = {
@@ -664,6 +813,7 @@
 		};
 		529604952453E766003EE63A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DC7AA6321BAAA1191E39689 /* Pods-Brastlewark.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -682,6 +832,7 @@
 		};
 		529604962453E766003EE63A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF526ED78113F5A72636060E /* Pods-Brastlewark.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -700,6 +851,7 @@
 		};
 		529604982453E766003EE63A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4536D8118EEE8BF31A5E33F2 /* Pods-BrastlewarkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -722,6 +874,7 @@
 		};
 		529604992453E766003EE63A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF037591CD2B9071B070243 /* Pods-BrastlewarkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -744,6 +897,7 @@
 		};
 		5296049B2453E766003EE63A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4695785FAE562ACBB783009A /* Pods-Brastlewark-BrastlewarkUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -764,6 +918,7 @@
 		};
 		5296049C2453E766003EE63A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C1798984FB372E8C85560E7 /* Pods-Brastlewark-BrastlewarkUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
