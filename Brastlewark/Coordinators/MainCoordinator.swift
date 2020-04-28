@@ -12,6 +12,7 @@ import Foundation
 final class MainCoordinator: Startable {
     fileprivate weak var window: UIWindow?
     fileprivate let factory: ViewControllerFactory!
+    lazy var rootController: UINavigationController = UINavigationController()
     
     init(window: UIWindow,
          factory: ViewControllerFactory = ViewControllerFactoryConcrete()) {
@@ -25,11 +26,17 @@ final class MainCoordinator: Startable {
     }
     
     private func configureMainView() {
-        let datasource = MainResultsDataSourceConcrete()
+        let datasource = MainResultsDataSourceConcrete { [weak self] gnome in
+            self?.showGnomeDetails(gnome)
+        }
         let viewModel = MainResultsViewModel(datasource: datasource)
         let mainView = factory.makeMainResultsView(viewModel: viewModel, datasource: datasource)
-        let rootControler = UINavigationController(rootViewController: mainView)
-        rootControler.navigationBar.prefersLargeTitles = true
-        window?.rootViewController = rootControler
+        rootController.viewControllers = [mainView]
+        rootController.navigationBar.prefersLargeTitles = true
+        window?.rootViewController = rootController
+    }
+    
+    func showGnomeDetails(_ gnome: GnomeModel) {
+        //TODO: implements details
     }
 }

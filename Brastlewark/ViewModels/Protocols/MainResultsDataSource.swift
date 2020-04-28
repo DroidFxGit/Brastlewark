@@ -8,6 +8,6 @@
 
 import UIKit
 
-protocol MainResultsDataSource: UICollectionViewDelegate, UICollectionViewDataSource {
+protocol MainResultsDataSource: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func observe(_ observer: NSObject, completionHandler: @escaping CompletionHandler)
 }

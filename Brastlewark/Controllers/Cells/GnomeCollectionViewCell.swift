@@ -20,6 +20,7 @@ class GnomeCollectionViewCell: UICollectionViewCell {
     }
     
     func configure(_ model: GnomeModel) {
+        profileImageView.image(from: model.thumbnail)
         nameLabel.text = model.name
         ageLabel.text = "Age: \(String(model.age))"
     }

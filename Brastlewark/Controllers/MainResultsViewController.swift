@@ -28,6 +28,7 @@ final class MainResultsViewController: UIViewController {
     }
     
     fileprivate func setupCollectionView() {
+        collectionView.register(NibName.gnomeCell, forCellWithReuseIdentifier: GnomeCollectionViewCell.reuseIdentifier)
         collectionView.dataSource = datasource
         collectionView.delegate = datasource
     }
@@ -35,8 +36,11 @@ final class MainResultsViewController: UIViewController {
 
 extension MainResultsViewController: UISearchBarDelegate, UISearchControllerDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        guard !searchText.isEmpty else { return }
+        viewModel.filterHabitants(with: searchText)
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        viewModel.resetData()
     }
 }

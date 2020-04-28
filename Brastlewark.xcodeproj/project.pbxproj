@@ -18,6 +18,10 @@
 		526DF7AC24550505000CE62E /* GnomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DF7AA24550505000CE62E /* GnomeCollectionViewCell.swift */; };
 		526DF7AD24550505000CE62E /* GnomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526DF7AB24550505000CE62E /* GnomeCollectionViewCell.xib */; };
 		526DF7B0245519D1000CE62E /* MainResultsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DF7AF245519D1000CE62E /* MainResultsDataSource.swift */; };
+		526DF7B524563A4C000CE62E /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DF7B424563A4C000CE62E /* UIImageViewExtension.swift */; };
+		526DF7B824564DD0000CE62E /* UINibExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DF7B724564DD0000CE62E /* UINibExtension.swift */; };
+		526DF7BB2457C88B000CE62E /* GnomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DF7B92457C88B000CE62E /* GnomeDetailViewController.swift */; };
+		526DF7BC2457C88B000CE62E /* GnomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526DF7BA2457C88B000CE62E /* GnomeDetailViewController.xib */; };
 		5296046E2453E764003EE63A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296046D2453E764003EE63A /* AppDelegate.swift */; };
 		529604702453E764003EE63A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296046F2453E764003EE63A /* SceneDelegate.swift */; };
 		529604772453E766003EE63A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529604762453E766003EE63A /* Assets.xcassets */; };
@@ -61,6 +65,10 @@
 		526DF7AA24550505000CE62E /* GnomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		526DF7AB24550505000CE62E /* GnomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GnomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		526DF7AF245519D1000CE62E /* MainResultsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainResultsDataSource.swift; sourceTree = "<group>"; };
+		526DF7B424563A4C000CE62E /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		526DF7B724564DD0000CE62E /* UINibExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINibExtension.swift; sourceTree = "<group>"; };
+		526DF7B92457C88B000CE62E /* GnomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeDetailViewController.swift; sourceTree = "<group>"; };
+		526DF7BA2457C88B000CE62E /* GnomeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GnomeDetailViewController.xib; sourceTree = "<group>"; };
 		5296046A2453E764003EE63A /* Brastlewark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brastlewark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5296046D2453E764003EE63A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5296046F2453E764003EE63A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,13 +114,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		526DF78F24548ED7000CE62E /* Cache */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cache;
-			sourceTree = "<group>";
-		};
 		526DF79024548EFC000CE62E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +192,31 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		526DF7B1245639C6000CE62E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				526DF7B624564DB2000CE62E /* Nibs */,
+				526DF7B2245639D1000CE62E /* UIImageView */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		526DF7B2245639D1000CE62E /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				526DF7B424563A4C000CE62E /* UIImageViewExtension.swift */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		526DF7B624564DB2000CE62E /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				526DF7B724564DD0000CE62E /* UINibExtension.swift */,
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
 		529604612453E764003EE63A = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +240,7 @@
 		5296046C2453E764003EE63A /* Brastlewark */ = {
 			isa = PBXGroup;
 			children = (
+				526DF7B1245639C6000CE62E /* Utils */,
 				5296049D2453E957003EE63A /* Controllers */,
 				526DF79124549168000CE62E /* Coordinators */,
 				529604A72453F5F8003EE63A /* Core */,
@@ -254,6 +281,8 @@
 				526DF7A92454FE00000CE62E /* Cells */,
 				5296049E2453E979003EE63A /* MainResultsViewController.swift */,
 				5296049F2453E979003EE63A /* MainResultsViewController.xib */,
+				526DF7B92457C88B000CE62E /* GnomeDetailViewController.swift */,
+				526DF7BA2457C88B000CE62E /* GnomeDetailViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -269,7 +298,6 @@
 		529604A72453F5F8003EE63A /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				526DF78F24548ED7000CE62E /* Cache */,
 				529604A82453F62F003EE63A /* Networking */,
 			);
 			path = Core;
@@ -398,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				529604A12453E979003EE63A /* MainResultsViewController.xib in Resources */,
+				526DF7BC2457C88B000CE62E /* GnomeDetailViewController.xib in Resources */,
 				526DF7AD24550505000CE62E /* GnomeCollectionViewCell.xib in Resources */,
 				5296047A2453E766003EE63A /* LaunchScreen.storyboard in Resources */,
 				529604772453E766003EE63A /* Assets.xcassets in Resources */,
@@ -427,8 +456,10 @@
 			files = (
 				529604A02453E979003EE63A /* MainResultsViewController.swift in Sources */,
 				526DF79B2454B050000CE62E /* ViewControllerFactory.swift in Sources */,
+				526DF7BB2457C88B000CE62E /* GnomeDetailViewController.swift in Sources */,
 				529604A62453EB26003EE63A /* HabitantsModelResponse.swift in Sources */,
 				529604AD2453F78D003EE63A /* BaseService.swift in Sources */,
+				526DF7B824564DD0000CE62E /* UINibExtension.swift in Sources */,
 				526DF7A42454E9A1000CE62E /* GenericDatasource.swift in Sources */,
 				526DF7AC24550505000CE62E /* GnomeCollectionViewCell.swift in Sources */,
 				526DF7A22454C233000CE62E /* DynamicValue.swift in Sources */,
@@ -439,6 +470,7 @@
 				526DF794245491BD000CE62E /* Startable.swift in Sources */,
 				5296046E2453E764003EE63A /* AppDelegate.swift in Sources */,
 				529604702453E764003EE63A /* SceneDelegate.swift in Sources */,
+				526DF7B524563A4C000CE62E /* UIImageViewExtension.swift in Sources */,
 				526DF79E2454B0D9000CE62E /* ViewControllerFactoryConcrete.swift in Sources */,
 				529604AF2453F84E003EE63A /* HabitantsServiceConcrete.swift in Sources */,
 				526DF7A72454F3F1000CE62E /* MainResultsDataSourceConcrete.swift in Sources */,

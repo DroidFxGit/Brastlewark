@@ -10,13 +10,19 @@ import UIKit
 
 
 final class MainResultsDataSourceConcrete: GenericDatasource<GnomeModel>, MainResultsDataSource {
-    private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 20.0, right: 20.0)
+    private let sectionInsets = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
     private let itemsPerRow: CGFloat = 2
     private let kHeightRow: CGFloat = 165
-    private let kHeightFooter: CGFloat = 145
+    private let kHeightFooter: CGFloat = 20
+    
+    var onAction: ((GnomeModel) -> Void)?
+    init(_ onAction: ((GnomeModel) -> Void)? = nil) {
+        self.onAction = onAction
+        super.init()
+    }
     
     func observe(_ observer: NSObject, completionHandler: @escaping CompletionHandler) {
-        data.addObserver(observer, completionHandler: completionHandler)
+        data.addAndNotify(observer: self, completionHandler: completionHandler)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -39,6 +45,11 @@ final class MainResultsDataSourceConcrete: GenericDatasource<GnomeModel>, MainRe
         let model = data.value[indexPath.row]
         cell.configure(model)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let model = data.value[indexPath.row]
+        onAction?(model)
     }
     
     func collectionView(_ collectionView: UICollectionView,

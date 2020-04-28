@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class ViewControllerFactoryConcrete: ViewControllerFactory  {
+final class ViewControllerFactoryConcrete: ViewControllerFactory {
     func makeMainResultsView(viewModel: MainResultsViewModel,
                              datasource: MainResultsDataSource) -> UIViewController {
         let controller = MainResultsViewController()
