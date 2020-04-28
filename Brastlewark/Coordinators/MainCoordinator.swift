@@ -29,7 +29,9 @@ final class MainCoordinator: Startable {
         let datasource = MainResultsDataSourceConcrete { [weak self] gnome in
             self?.showGnomeDetails(gnome)
         }
-        let viewModel = MainResultsViewModel(datasource: datasource)
+        let viewModel = MainResultsViewModel(datasource: datasource) { [weak self] error in
+            self?.showAlert(with: error)
+        }
         let mainView = factory.makeMainResultsView(viewModel: viewModel, datasource: datasource)
         rootController.viewControllers = [mainView]
         rootController.navigationBar.prefersLargeTitles = true
@@ -40,5 +42,13 @@ final class MainCoordinator: Startable {
         let datasource = GnomeDetailDatasourceConcrete(model: gnome)
         let controller = factory.makeGnomeDetailView(datasource: datasource)
         rootController.pushViewController(controller, animated: true)
+    }
+    
+    func showAlert(with error: Error) {
+        DispatchQueue.main.async {
+            UIAlertControllerView.showAlert(from: self.rootController,
+            title: "Error",
+            message: error.localizedDescription)
+        }
     }
 }

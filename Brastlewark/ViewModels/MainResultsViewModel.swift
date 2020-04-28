@@ -10,13 +10,16 @@ import Foundation
 
 final class MainResultsViewModel {
     fileprivate weak var datasource : GenericDatasource<GnomeModel>?
-    fileprivate let service: HabitantsServiceConcrete
-    fileprivate var habitants: [GnomeModel] = []
+    fileprivate let service: HabitantsService
+    fileprivate(set) var habitants: [GnomeModel] = []
+    fileprivate var onAction: ((Error) -> Void)?
     
     init(datasource: GenericDatasource<GnomeModel>?,
-         service: HabitantsServiceConcrete = HabitantsServiceConcrete()) {
+         service: HabitantsService = HabitantsServiceConcrete(),
+         onAction: ((Error) -> Void)? = nil) {
         self.datasource = datasource
         self.service = service
+        self.onAction = onAction
     }
     
     func fetchHabitants() {
@@ -27,8 +30,7 @@ final class MainResultsViewModel {
                     self?.habitants = response.habitants
                     self?.datasource?.data.value = response.habitants
                 case .failure(let error):
-                    //TODO: handle error
-                    print("something happened: \(error)")
+                    self?.onAction?(error)
                 }
             }
         }
