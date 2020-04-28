@@ -37,6 +37,8 @@ final class MainCoordinator: Startable {
     }
     
     func showGnomeDetails(_ gnome: GnomeModel) {
-        //TODO: implements details
+        let datasource = GnomeDetailDatasourceConcrete(model: gnome)
+        let controller = factory.makeGnomeDetailView(datasource: datasource)
+        rootController.pushViewController(controller, animated: true)
     }
 }

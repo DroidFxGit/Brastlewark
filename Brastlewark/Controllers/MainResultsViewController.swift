@@ -20,8 +20,9 @@ final class MainResultsViewController: UIViewController {
         title = "Inhabitants"
         setupCollectionView()
         datasource.observe(self) { [weak self] in
+            guard let strongSelf = self else { fatalError("ViewController was dismissed") }
             DispatchQueue.main.async {
-                self?.collectionView.reloadData()
+                strongSelf.collectionView.reloadData()
             }
         }
         viewModel.fetchHabitants()

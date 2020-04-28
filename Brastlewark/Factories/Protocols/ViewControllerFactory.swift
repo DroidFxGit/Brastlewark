@@ -11,4 +11,6 @@ import UIKit
 protocol ViewControllerFactory: AnyObject {
     func makeMainResultsView(viewModel: MainResultsViewModel,
                              datasource: MainResultsDataSource) -> UIViewController
+
+    func makeGnomeDetailView(datasource: GnomeDetailDatasource) -> UIViewController
 }

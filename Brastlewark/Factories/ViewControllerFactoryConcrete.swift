@@ -9,6 +9,7 @@
 import UIKit
 
 final class ViewControllerFactoryConcrete: ViewControllerFactory {
+    
     func makeMainResultsView(viewModel: MainResultsViewModel,
                              datasource: MainResultsDataSource) -> UIViewController {
         let controller = MainResultsViewController()
@@ -24,6 +25,16 @@ final class ViewControllerFactoryConcrete: ViewControllerFactory {
         controller.definesPresentationContext = true
         controller.searchController = searchVC
         
+        return controller
+    }
+    
+    func makeGnomeDetailView(datasource: GnomeDetailDatasource) -> UIViewController {
+        let controller = GnomeDetailViewController()
+        controller.datasource = datasource
+        
+        let headerView = MainHeaderView()
+        headerView.configure(thumbnail: datasource.thumbnail)
+        controller.headerView = headerView
         return controller
     }
 }
