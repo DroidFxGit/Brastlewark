@@ -10,12 +10,15 @@ import UIKit
 
 class GnomeDetailViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    var headerView: MainHeaderView!
+    lazy var headerView: MainHeaderView = MainHeaderView(frame: CGRect(x: 0, y: 0,
+                                                                       width: tableView.frame.width,
+                                                                       height: 200))
     var datasource: GnomeDetailDatasource!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Details"
+        headerView.configure(thumbnail: datasource.thumbnail)
         configureTableView()
     }
     

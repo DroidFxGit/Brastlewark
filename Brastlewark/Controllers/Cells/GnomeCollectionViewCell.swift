@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PINRemoteImage
 
 class GnomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var profileImageView: UIImageView!
@@ -20,7 +21,8 @@ class GnomeCollectionViewCell: UICollectionViewCell {
     }
     
     func configure(_ model: GnomeModel) {
-        profileImageView.image(from: model.thumbnail)
+        profileImageView.pin_updateWithProgress = true
+        profileImageView.pin_setImage(from: URL(string: model.thumbnail))
         nameLabel.text = model.name
         ageLabel.text = "Age: \(String(model.age))"
     }

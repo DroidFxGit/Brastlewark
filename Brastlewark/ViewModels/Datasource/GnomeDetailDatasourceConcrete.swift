@@ -32,10 +32,6 @@ final class GnomeDetailDatasourceConcrete: NSObject, GnomeDetailDatasource {
         super.init()
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 200
-    }
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

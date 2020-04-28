@@ -32,9 +32,6 @@ final class ViewControllerFactoryConcrete: ViewControllerFactory {
         let controller = GnomeDetailViewController()
         controller.datasource = datasource
         
-        let headerView = MainHeaderView()
-        headerView.configure(thumbnail: datasource.thumbnail)
-        controller.headerView = headerView
         return controller
     }
 }

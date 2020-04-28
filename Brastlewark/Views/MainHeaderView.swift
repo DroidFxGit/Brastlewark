@@ -30,6 +30,7 @@ class MainHeaderView: UIView {
     }
     
     func configure(thumbnail: String) {
-        mainImageView.image(from: thumbnail)
+        mainImageView.pin_updateWithProgress = true
+        mainImageView.pin_setImage(from: URL(string: thumbnail))
     }
 }
