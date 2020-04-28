@@ -10,7 +10,7 @@ import UIKit
 
 class GnomeDetailViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    var headerView: UIView!
+    var headerView: MainHeaderView!
     var datasource: GnomeDetailDatasource!
     
     override func viewDidLoad() {
@@ -22,6 +22,7 @@ class GnomeDetailViewController: UIViewController {
     fileprivate func configureTableView() {
         tableView.delegate = datasource
         tableView.dataSource = datasource
+        tableView.separatorInset = .zero
         tableView.register(UITableViewCell.self,
                            forCellReuseIdentifier: GnomeDetailDatasourceConcrete.kCellIdentifier)
         tableView.tableFooterView = UIView()
